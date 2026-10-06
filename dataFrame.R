@@ -5,6 +5,10 @@ df <- data.frame(name=c("roman","bishal","arya"),
                  grade=c('a','b','c'));
 df
 
+li <- list(df=df,level=c('bachelors,master'))
+li
+data.frame(li)
+
 # accessing the elements of data frame
 
 df$marks[2]
@@ -22,10 +26,16 @@ df$name[1] <- NA
 df
 
 #inbuilt functions
+
 mean(df$marks)
 max(df$marks)
 sd(df$marks)
-  
+dim(df)
+typeof(df)
+nrow(df)
+ncol(df)
+df[df$marks>45,]
+
 
 #another way of declaring data frame
 
@@ -33,4 +43,5 @@ age <- c(23,24,25)
 gender <- c('m','f','f')
 
 data.frame(age,gender)
+
 
