@@ -1,0 +1,6 @@
+Id NaMe Age Marks 
+1 Sun 18 90
+2 Moon 19 80
+3 Star 20 70
+4 Galaxy 21 60
+5 NA 22 50
