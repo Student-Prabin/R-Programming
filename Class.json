@@ -1,0 +1,44 @@
+{
+  "classroom": {
+    "grade": 10,
+    "section": "A",
+    "students": [
+      {
+        "id": 101,
+        "name": "Aarav Sharma",
+        "rollNumber": 1,
+        "age": 15,
+        "subjects": [
+          "Mathematics",
+          "Science",
+          "Computer Science"
+        ],
+        "passed": true
+      },
+      {
+        "id": 102,
+        "name": "Sita Thapa",
+        "rollNumber": 2,
+        "age": 16,
+        "subjects": [
+          "Mathematics",
+          "English",
+          "Economics"
+        ],
+        "passed": true
+      },
+      {
+        "id": 103,
+        "name": "Rohan Karki",
+        "rollNumber": 3,
+        "age": 15,
+        "subjects": [
+          "Science",
+          "History",
+          "Computer Science"
+        ],
+        "passed": false
+      }
+    ]
+  }
+}

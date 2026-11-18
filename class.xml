@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classroom grade="10" section="A">
+  <student id="101">
+    <name>Aarav Sharma</name>
+    <rollNumber>1</rollNumber>
+    <age>15</age>
+    <subjects>
+      <subject>Mathematics</subject>
+      <subject>Science</subject>
+      <subject>Computer Science</subject>
+    </subjects>
+    <passed>true</passed>
+  </student>
+
+  <student id="102">
+    <name>Sita Thapa</name>
+    <rollNumber>2</rollNumber>
+    <age>16</age>
+    <subjects>
+      <subject>Mathematics</subject>
+      <subject>English</subject>
+      <subject>Economics</subject>
+    </subjects>
+    <passed>true</passed>
+  </student>
+
+  <student id="103">
+    <name>Rohan Karki</name>
+    <rollNumber>3</rollNumber>
+    <age>15</age>
+    <subjects>
+      <subject>Science</subject>
+      <subject>History</subject>
+      <subject>Computer Science</subject>
+    </subjects>
+    <passed>false</passed>
+  </student>
+</classroom>
