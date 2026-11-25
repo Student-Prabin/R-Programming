@@ -1,6 +1,29 @@
-Id NaMe Age Marks 
-1 Sun 18 90
-2 Moon 19 80
-3 Star 20 70
-4 Galaxy 21 60
-5 NA 22 50
+sudo rpm -q bind-utils ============ check if bind and bind utils are in ur pc
+sudo dnf install bind bind-utils ================== install bind and bind utils if they are not installed
+sudo systemctl status named =================== check the staus of named
+sudo systemctl start named =================== starts the dns service from named folder
+sudo systemctl restart named =================== retarts the dns service from named folder
+ll /etc/named.conf ===================== checks if the named folder is in my pc or not
+sudo cp -p /etc/named.conf /etc/named.conf.backup ====================== back up the named.conf file
+ls -l /etc/ |grep named ====================================== checks all the files startng with named (done by grep) check if backup made
+sudo su ====================go to root
+vim /etc/named.conf ======================= go to the named.conf file and change these to listen-on oprt 53 {ip; any;};
+										   allow-query {localhost; any;} ---- anyone can listen to 										   my query u can also add only ur ip in here
+esc + :wq ====exit by saving
+esc + q! =====exit without saving
+vi /etc/named.conf ============go to named.conf file
+
+------------------------
+zone "dahal.com" IN {
+	type master;
+	file "fwd.dahal.com.db";
+	allow-update {none;};
+};						============================== add these lines after zone'.'{}; then save and exit
+
+zone"200.168.192.in-addr.arpa" IN {
+	type master;
+	file "rev.200.168.192.db";
+	allow-update {none;};
+};					
+
+named-checkconf				============check if everything is right if nothing comes it means everything is ok
